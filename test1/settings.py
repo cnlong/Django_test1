@@ -55,7 +55,7 @@ ROOT_URLCONF = 'test1.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')]
+        'DIRS': [os.path.join(BASE_DIR, 'templates')] # 设置模板文件的目录路径，BASE_DIR项目文件路径，避免文件移动造成找不到
         ,
         'APP_DIRS': True,
         'OPTIONS': {

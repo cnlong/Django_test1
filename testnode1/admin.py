@@ -16,5 +16,6 @@ class HeroInfoAdmin(admin.ModelAdmin):
 
 
 # 注册模型类
+# 同一个类的注册只能写一次，多次会报错
 admin.site.register(BookInfo, BookInfoAdmin)
 admin.site.register(HeroInfo, HeroInfoAdmin)
