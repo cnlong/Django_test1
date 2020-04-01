@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图书信息</title>
+</head>
+<body>
+<h1>图书信息如下：</h1>
+<ul>
+    {% for book in books %}
+{#        # 这里定义书籍的链接地址，根据其id定义地址，方便传参，detail函数根据这个id查询英雄信息#}
+        <li><a href="/books/{{ book.id }}">{{ book.btitle }}</a></li>
+    {% endfor %}
+</ul>
+</body>
+</html>
